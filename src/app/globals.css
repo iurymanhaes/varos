@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 19, 19, 19;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+  --primary-doc:250,250,250
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 19, 19, 19;
+    --background-start-rgb: 19, 19, 19;
+    --background-end-rgb: 19, 19, 19;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: rgb(var(--foreground-rgb));
+}
+@layer utilities {
+  body .bg-custom-primary-black {
+    background-color: rgb(19,19,19);
+  }
+body .text-primary-doc {
+  color: rgb(var(--primary-doc));
+}
+  
+
+}
+.container {
+  max-width: 1200px;
+}
+
+.header {
+  height:64px !important;
+}
