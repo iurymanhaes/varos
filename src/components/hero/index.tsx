@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import { Col, Row } from "antd";
 import Image from "next/image";
@@ -6,7 +7,11 @@ import InfiniteSlider from "./slider";
 
 export default function Hero() {
   return (
-    <Row align="middle" justify="space-between" className="w-full container">
+    <Row
+      align="middle"
+      justify="space-between"
+      className="w-full container mb-[252px] mt-[153px] p-0"
+    >
       <Col lg={14} className=" w-full">
         <h1 className="text-grey-c1 text-[64px] font-extrabold leading-[70px] mb-6">
           Investir de forma
@@ -33,15 +38,15 @@ export default function Hero() {
         <Row
           align="middle"
           justify="start"
-          className="w-full max-w-[520px] py-6 rounded-3xl mt-[88px] borda-gradient relative overflow-hidden"
+          className="w-full max-w-[520px] py-[25px] rounded-3xl mt-[88px] borda-gradient relative overflow-hidden"
         >
           <InfiniteSlider />
         </Row>
       </Col>
       <Col lg={8}>
-        <CardHero mb_card="70px" />
-        <CardHero mb_card="70px" ml_card />
-        <CardHero />
+        <CardHero mb_card="70px" content="Carteira FATOR" />
+        <CardHero mb_card="70px" ml_card content="Carteira de Dividendos" />
+        <CardHero mb_card="0px" content="Código.py" />
       </Col>
     </Row>
   );
