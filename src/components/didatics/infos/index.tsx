@@ -16,15 +16,11 @@ export default function Infos({ amount, description, hasColor }: Props) {
       >
         {amount}
       </span>
-      {hasColor ? (
-        <span className="max-w-[110px] font-red-hat text-center text-sm text-varosDoc font-normal leading-[16.8px]">
-          Nota média
-          <br /> geral das aulas
-        </span>
-      ) : (
-        <span className="max-w-[110px] font-red-hat text-center text-sm text-varosDoc font-normal leading-[16.8px]">
-          {description}
-        </span>
+      {description && (
+        <span
+          className="md:w-full font-red-hat text-center text-sm text-varosDoc font-normal leading-[16.8px] text-nowrap"
+          dangerouslySetInnerHTML={{ __html: description }}
+        />
       )}
     </div>
   );

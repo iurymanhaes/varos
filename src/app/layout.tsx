@@ -9,11 +9,11 @@ const redHat = Red_Hat_Display({ subsets: ['latin'], weight: ['300', '400', '500
 const RootLayout = ({ children }: React.PropsWithChildren) => (
   <html lang="pt-BR" className={redHat.className}>    
     <body >
-      <AntdRegistry>
+      <>
         <HeaderCustom />
         {children}
         <Footer />
-      </AntdRegistry>
+      </>
     </body>
   </html>
 );

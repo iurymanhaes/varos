@@ -33,11 +33,23 @@ const config: Config = {
         varosCBlack: "rgba(19, 19, 19, 1)",
         varosDoc: "rgba(250, 250, 250, 1)",
         varosG1: "rgba(204, 204, 204, 1)",
+        varosLI: "rgba(34, 39, 41, 0.50)",
       },
       gradientColorStops: (theme) => ({
         "gray-0": "rgba(77, 83, 88, 0)",
         "gray-100": "rgba(77, 83, 88, 1)",
       }),
+    },
+    screens: {
+      sm: "280px",
+
+      md: "768px",
+
+      lg: "1024px",
+
+      xl: "1280px",
+
+      "2xl": "1536px",
     },
   },
   plugins: [],

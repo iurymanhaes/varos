@@ -5,9 +5,9 @@ import Register from "@/components/register";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: 'VAROS',
-  description: 'Processo seletivo para vaga de desenvolvedor front-end',
-}
+  title: "VAROS",
+  description: "Processo seletivo para vaga de desenvolvedor front-end",
+};
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between">
