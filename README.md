@@ -25,3 +25,4 @@ Acesse o seu aplicativo no navegador através do seguinte endereço: http://loca
 Certifique-se de ter instalado a versão mais recente do Node.js e do Yarn para garantir o funcionamento adequado do projeto.
 
 Quanto ao arquivo env.example, ele contém um esboço das variáveis de ambiente necessárias para o funcionamento do projeto. Essas variáveis podem incluir informações como chaves de API, configurações de banco de dados ou qualquer outra configuração específica do ambiente. As informações serão passadas por mensagem ao Lucas. Certifique-se de preencher corretamente as variáveis no arquivo .env.local com os valores fornecidos antes de executar o projeto.
+
