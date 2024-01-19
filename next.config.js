@@ -3,8 +3,7 @@ const nextConfig = {
     async headers() {
         return [
           {
-            // matching all API routes
-            source: "/api/:path*",
+            source: "/app/api/form",
             headers: [
               { key: "Access-Control-Allow-Credentials", value: "true" },
               { key: "Access-Control-Allow-Origin", value: "*" },
