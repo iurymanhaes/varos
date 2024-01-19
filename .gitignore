@@ -1,0 +1,34 @@
+# Arquivos de ambiente
+.env
+.env.local
+
+# Pasta de dependências
+node_modules/
+
+# Pasta de construção Next.js
+.next/
+
+# Arquivos de log
+*.log
+
+# Arquivos temporários
+*.tmp
+
+# Arquivo de configuração local
+.next
+
+# Arquivo de configuração do VSCode (se você usar o Visual Studio Code)
+.vscode/
+
+# Arquivos de configuração de usuário do WebStorm (se você usar WebStorm)
+.idea/
+
+# Cache do Yarn (se você usar Yarn)
+.yarn/
+
+# Cache do npm
+.npm/
+
+# Arquivos de configuração do sistema operacional
+.DS_Store
+Thumbs.db

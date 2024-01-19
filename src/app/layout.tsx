@@ -1,4 +1,5 @@
 import "./globals.css";
+import React from "react";
 import { AntdRegistry } from "@ant-design/nextjs-registry";
 import HeaderCustom from "@/components/layout/header";
 import { Red_Hat_Display } from 'next/font/google';

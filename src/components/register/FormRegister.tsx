@@ -7,12 +7,14 @@ export default function FormRegister() {
   const [form] = Form.useForm();
   const [loading, setLoading] = useState(false);
 
+  const apiUrl = process.env.NEXT_PUBLIC_URL || "http://localhost:3000"
+
   const onFinish = async () => {
     setLoading(true);
     try {
       const values = await form.validateFields();
 
-      const response = await fetch(`http://localhost:3000/api/form`, {
+      const response = await fetch(`${apiUrl}/api/form`, {
         method: "POST",
         //@ts-ignore
         headers: {
